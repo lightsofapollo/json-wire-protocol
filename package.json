@@ -1,12 +1,13 @@
 {
   "name": "json-wire-protocol",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "index.js",
   "description": "JSON wire protocol parser/writer (used in mozilla debugger protocol)",
   "author": "James Lal",
   "main": "lib/index.js",
 
   "dependencies" : {
+    "eventemitter2": "~0.4"
   },
 
   "scripts": {
@@ -16,8 +17,7 @@
   "devDependencies": {
     "mocha": "~1.7",
     "chai": "~1.6",
-    "test-agent": "~0.12",
-    "eventemitter2": "~0.4"
+    "test-agent": "~0.12"
   },
 
   "license": "MIT",
