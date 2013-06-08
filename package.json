@@ -1,6 +1,6 @@
 {
   "name": "json-wire-protocol",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "index.js",
   "description": "JSON wire protocol parser/writer (used in mozilla debugger protocol)",
   "author": "James Lal",
