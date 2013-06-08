@@ -13,7 +13,10 @@
   },
 
   "devDependencies": {
-    "mocha": "~1.7"
+    "mocha": "~1.7",
+    "chai": "~1.6",
+    "test-agent": "~0.12",
+    "eventemitter2": "~0.4"
   },
 
   "license": "MIT",
