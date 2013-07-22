@@ -5,7 +5,7 @@ TARGET=json-wire-protocol.js
 
 .PHONY: build
 build:
-	cat $(CONCAT_FILES) >> $(TARGET)
+	cat $(CONCAT_FILES) > $(TARGET)
 
 .PHONY: test
 test: test-node test-browser
