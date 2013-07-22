@@ -13,6 +13,10 @@ suite('json wire protocol', function() {
     return encoder.encode(content).buffer;
   }
 
+  test('.separator', function() {
+    assert.ok(jsonWireProtocol.separator);
+  });
+
   suite('#stringify', function() {
     test('ASCII only', function() {
       var input = { a: 'abcdefg' };
