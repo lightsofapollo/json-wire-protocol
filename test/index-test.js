@@ -1,16 +1,13 @@
 suite('json wire protocol', function() {
+  var assert = require('assert');
+  var jsonWireProtocol = require('../');
+
   var subject;
   var TWO_BYTE = 'ž';
   var HAS_BUFFER = typeof Buffer !== 'undefined';
 
   function createBytes(content) {
-    if (HAS_BUFFER) {
       return new Buffer(content);
-    }
-
-    // create text encode to initialize ArrayBuffer
-    var encoder = new TextEncoder();
-    return encoder.encode(content).buffer;
   }
 
   test('.separator', function() {
@@ -87,8 +84,6 @@ suite('json wire protocol', function() {
           subject.write(bufferA);
           subject.write(bufferB);
         });
-
-        return;
 
         test('result after writing to stream', function() {
           assert.deepEqual(

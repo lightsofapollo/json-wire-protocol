@@ -1,3 +1,6 @@
+# 1.0.0
+  - node only version with complete change of module interface.
+
 # 0.2.0
   - expose separator constant value.
 
